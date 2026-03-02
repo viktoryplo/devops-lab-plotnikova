@@ -1,6 +1,6 @@
-Lab: Lab0 /
-Date of create: 02.03.2026 /
-Date of finished: 02.03.2026 /
+Lab: Lab0 
+  Date of create: 02.03.2026 
+  Date of finished: 02.03.2026 
 
 Отчет:
 1) Аккаунта на GitHub у меня не было, по инструкции создала, сгенерировала SSH ключ для работы с репозиториями
