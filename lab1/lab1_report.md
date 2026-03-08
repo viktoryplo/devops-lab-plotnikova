@@ -1,1 +1,25 @@
+University: [ITMO University](https://itmo.ru/ru/)  
+Faculty: [FICT](https://fict.itmo.ru)  
+Course: [Введение в веб технологии](https://itmo-ict-faculty.github.io/introduction-in-web-tech/)  
+Year: 2025/2026  
+Group: U4125  
+Author: Плотникова Виктория Артемовна  
+Lab: Lab0  
+Date of create: 01.03.2026  
+Date of finished:  
 
+Отчет:
+1) Скачала Docker на Windows, обновила весию Linux на компьютере, проверила установку и поработала с базвыми командами:  
+![](test.png)  
+2) Скачала образ Ububtu, запустила интерактивный контейнер и пакет:
+![](ubuntu.png)
+![](curl.png)
+3) Запустила контейнер nginx и проверила работу в браузере:
+![](alpine.png)
+![](nginx.png)
+4) Посмотрела запущенные контейнеры, все контейнеры, остановила контейнер, запустила установленный, остановила, удалила образ:
+![](allcont.png)
+![](uprconteyn.png)
+5) Далее по инструкции создала том, запустила контейнер с томом, подключила и создала файл через: echo "Hello from volume" > /data/test.txt  
+6) Удалила контейнер и создала новый с тем же томом + проверила, что файл сохранился:
+![](chech.png)
