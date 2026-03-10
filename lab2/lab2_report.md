@@ -14,7 +14,6 @@ Date of finished:
    - добавила файл `app.py` с простым Flask-приложением  
    - добавила файл `requirements.txt` с зависимостями  
    - добавила `Dockerfile` для сборки Docker-образа
-     ![](img 2_1.jpg)  
      
 2) Собрала локально Docker-образ и проверила его работу:  
    - `docker build -t my-flask-app:lab2 ./lab2`  
@@ -30,13 +29,11 @@ Date of finished:
    - добавила два шага «деплоя» в виде `echo`:  
      - для ветки `develop` сообщение `Deploying to development server...`  
      - для ветки `main` сообщение `Deploying to production server...`  
-    ![](img 2_3.jpg) 
  
 4) Настроила секреты GitHub репозитория для работы с Docker Hub:  
    - в разделе Settings → Secrets and variables → Actions создала секрет `DOCKER_USERNAME`  
    - в том же разделе создала секрет `DOCKER_PASSWORD` (пароль или токен Docker Hub)  
    - убедилась, что секреты используются в workflow  
-   - скриншот страницы с секретами:  
 
 5) Создала ветку `develop` и протестировала пайплайн для обеих веток:  
    - локально создала ветку разработки: `git checkout -b develop`  
@@ -45,7 +42,6 @@ Date of finished:
    - в разделе Actions проверила, что workflow запустился автоматически для `main`  
    - просмотрела логи всех шагов, убедилась в успешном логине в Docker Hub, сборке и пуше образа, а также в сообщении о деплое на production (`Deploying to production server...`)  
    - открыла Docker Hub и проверила появление образа `my-flask-app:latest`  
-    ![](img 2_2.jpg)  
 
 Результат работы:  
 В результате выполнения лабораторной работы №2 настроила простой CI/CD пайплайн на GitHub Actions для автоматической сборки и публикации Docker-образа Flask-приложения в Docker Hub с использованием секретов и шагом условного деплоя (в виде заглушки).  
